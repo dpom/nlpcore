@@ -1,0 +1,41 @@
+#+TITLE: DeveloperGuide.org
+#+DESCRIPTION: developer guide for duckling
+#+AUTHOR: Dan Pomohaci
+#+EMAIL: dan.pomohaci@gmail.com
+#+STARTUP: overview
+
+---
+
+---
+
+* Architecture
+
+** core
+
+Implement the CLI.
+
+The actual actions keywords are stored in  =commands= map.
+
+Each action should implement 3 multimethod (defined in =command.clj=):
+- run :: execute the action
+- help :: return the help string
+- syntax :: return the syntax string
+
+** model folder
+
+Contains models implementations.
+
+The =core= unit contains the =Model= protocol and specific spec keys.
+
+** corpus folder
+
+Contains corpus builder implementations.
+
+** tool folder
+
+Contains end user tools implementations.
+
+** module
+
+Contains integrant modules used by the other units (usually =corpus= units).
+
