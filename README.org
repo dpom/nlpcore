@@ -3,7 +3,8 @@
   :CUSTOM_ID: nlp-tools
   :END:
 
-nlp-tools is a library for Natural Language Processing core protocols.
+nlp-tools is a library for Natural Language Processing core protocols and specs used in other projects.
+
 
 
 ** Getting started
