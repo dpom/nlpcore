@@ -15,7 +15,7 @@ For lein add in you project.clj:
 [[https://clojars.org/dpom/nlpcore][https://img.shields.io/clojars/v/dpom/nlpcore.svg]]
 
 
-See the [[https://dpom.github.io/nlp-tools][documentation]] for more information.
+See the [[https://dpom.github.io/nlpcore][documentation]] and [[https://dpom.github.io/nlpcore/api/index.html][API]] for more information.
 
 
 ** License
