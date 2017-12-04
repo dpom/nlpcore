@@ -1,0 +1,25 @@
+* nlpcore
+  :PROPERTIES:
+  :CUSTOM_ID: nlp-tools
+  :END:
+
+nlp-tools is a library for Natural Language Processing core protocols and specs used in other projects.
+
+
+
+** Getting started
+
+
+For lein add in you project.clj:
+
+[[https://clojars.org/dpom/nlpcore][https://img.shields.io/clojars/v/dpom/nlpcore.svg]]
+
+
+See the [[https://dpom.github.io/nlp-tools][documentation]] for more information.
+
+
+** License
+
+Copyright © 2017 Dan Pomohaci
+
+This project is licensed under the terms of the  Apache License 2.0.

@@ -1,0 +1,17 @@
+#+TITLE: DeveloperGuide.org
+#+DESCRIPTION: developer guide for duckling
+#+AUTHOR: Dan Pomohaci
+#+EMAIL: dan.pomohaci@gmail.com
+#+STARTUP: overview
+
+---
+
+---
+
+The library defines protocols and specs common to several NLP projects (now only nlptools and clj-duckling). 
+
+* Architecture
+
+The lib has 2 files:
+- protocols :: contains NLP protocols
+- spec :: contins global spec 
