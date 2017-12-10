@@ -1,8 +1,12 @@
-(defproject dpom/nlpcore "1.0"
+(defproject dpom/nlpcore "1.1"
   :description "Natural Language Processing core protocols"
   :url "https://dpom.github.io/nlpcore/"
+  :license {:name "Apache License 2.0"
+            :url "https://www.apache.org/licenses/LICENSE-2.0.html"
+            :comments "see LICENSE"
+            :distribution :repo}
   :min-lein-version "2.0.0"
-  :dependencies [[org.clojure/clojure "1.9.0-RC2"]
+  :dependencies [[org.clojure/clojure "1.9.0"]
                  [duct/logger "0.2.1"]]
   :pedantic? :warning
   :plugins [[lein-ancient "0.6.10" :exclusions [commons-logging org.clojure/clojure]]

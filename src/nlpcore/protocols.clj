@@ -4,10 +4,14 @@
 
 (defprotocol Module
   (get-id [this] "Get module id")
-  (set-logger! [this newlogger] "Set current logger"))
+  (get-version [this] "Get nlpcore version")
+  (set-logger! [this newlogger] "Set current logger")
+  (get-logger [this] "Get current logger"))
 
 (def default-module-impl {:get-id (fn [this] (:id this))
-                          :set-logger! (fn [this newlogger] (reset! (:logger this) newlogger))})
+                          :get-version (fn [this] "1.1")
+                          :set-logger! (fn [this newlogger] (reset! (:logger this) newlogger))
+                          :get-logger (fn [this] @(:logger this))})
 
 
 (defprotocol Corpus
@@ -22,4 +26,5 @@
 
 (defprotocol Tool
   (build-tool! [this] "(Re)Build the tool")
+  (get-tool-features [this] "Get tool features as a map")
   (apply-tool [this text opts] "Apply the tool to a text using opts map"))
