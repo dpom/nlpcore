@@ -5,11 +5,13 @@
 (defprotocol Module
   (get-id [this] "Get module id")
   (get-version [this] "Get nlpcore version")
+  (get-features [this] "Get module features as a map")
   (set-logger! [this newlogger] "Set current logger")
   (get-logger [this] "Get current logger"))
 
 (def default-module-impl {:get-id (fn [this] (:id this))
                           :get-version (fn [this] "1.1")
+                          :get-features (fn [this] {})
                           :set-logger! (fn [this newlogger] (reset! (:logger this) newlogger))
                           :get-logger (fn [this] @(:logger this))})
 
@@ -26,5 +28,5 @@
 
 (defprotocol Tool
   (build-tool! [this] "(Re)Build the tool")
-  (get-tool-features [this] "Get tool features as a map")
+  
   (apply-tool [this text opts] "Apply the tool to a text using opts map"))

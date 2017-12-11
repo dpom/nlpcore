@@ -1,4 +1,4 @@
-(defproject dpom/nlpcore "1.1"
+(defproject dpom/nlpcore "1.2"
   :description "Natural Language Processing core protocols"
   :url "https://dpom.github.io/nlpcore/"
   :license {:name "Apache License 2.0"
