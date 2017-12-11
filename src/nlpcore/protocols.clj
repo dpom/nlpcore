@@ -10,7 +10,7 @@
   (get-logger [this] "Get current logger"))
 
 (def default-module-impl {:get-id (fn [this] (:id this))
-                          :get-version (fn [this] "1.1")
+                          :get-version (fn [this] "1.2")
                           :get-features (fn [this] {})
                           :set-logger! (fn [this newlogger] (reset! (:logger this) newlogger))
                           :get-logger (fn [this] @(:logger this))})
