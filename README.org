@@ -1,9 +1,9 @@
 * nlpcore
   :PROPERTIES:
-  :CUSTOM_ID: nlp-tools
+  :CUSTOM_ID: nlp-core
   :END:
 
-nlp-tools is a library for Natural Language Processing core protocols and specs used in other projects.
+nlp-core is a library for Natural Language Processing core protocols and specs used in other projects.
 
 
 
